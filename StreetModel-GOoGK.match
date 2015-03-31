@@ -1,0 +1,9 @@
+#
+# matches between StreetModel and GOoGK (must be reversible)
+#
+
+cat:FootPath === cat:FootPath
+cat:DrivingLane === cat:DrivingLane
+
+cat:CenterLine === cat:CenterLine
+

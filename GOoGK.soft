@@ -1,0 +1,111 @@
+#
+# General Ontology of Geographic Kinds
+#
+
+[General Ontology of Geographic Kinds]
+
+# link to BFO
+cat:GeographicObject -subcat-> *cat:ObjectAggregate
+cat:GeographicRegion -subcat-> *cat:Surface
+cat:GeographicProcess -subcat-> *cat:ProcessAggregate
+cat:Altitude -subcat-> *cat:Quality
+cat:PopulationDensity ~
+
+# general
+cat:GeographicObject -located_in-> cat:GeographicRegion
+cat:Altitude -quality_of-> cat:GeographicRegion
+cat:PopulationDensity ~
+
+# naive geographic objects
+cat:Lake -subcat-> cat:GeographicObject
+cat:River ~
+cat:Ocean ~
+cat:Volcano ~
+cat:Mountain ~
+cat:Plateau ~
+cat:Valley ~
+
+# transportation (based on CityGML)
+cat:TransportationComplex -subcat-> *cat:GeographicObject
+cat:SoilCover ~
+cat:Vegetation ~
+cat:Sidewalk ~
+cat:Curb ~
+
+cat:Street -subcat-> cat:TransportationComplex
+cat:Airport ~
+cat:RailRoad ~
+
+cat:Traffic -subcat-> *cat:GeographicProcess
+
+cat:VehicularTraffic -subcat-> cat:Traffic
+cat:PedestrianTraffic ~
+
+cat:CenterLine -element_of-> cat:TransportationComplex
+
+cat:City -subcat-> cat:GeographicObject
+
+cat:CenterLine -subcat-> *cat:Line
+
+cat:RoadMarking -part_for-> cat:TransportationComplex
+cat:FootPath ~
+cat:CyclePath ~
+cat:CurbStone ~
+cat:DrivingLane ~
+cat:GreenArea ~
+
+# naive vegetation
+cat:Lawn -subcat-> cat:Vegetation
+cat:Trees ~
+cat:GreenArea -contains-> cat:Vegetation
+
+# basic regionalization
+cat:PhysiographicRegion -subcat-> cat:GeographicObject
+cat:ClimateRegion ~
+
+# zoning
+cat:PlanningZone -subcat-> cat:GeographicObject
+cat:Suburb -subcat-> cat:PlanningZone
+cat:Downtown ~
+cat:Residential ~
+cat:Commercial ~
+cat:Mixed ~
+
+# structures
+cat:Structure -subcat-> cat:GeographicObject
+cat:Dam -subcat-> cat:Structure
+cat:Canal ~
+cat:Port ~
+cat:Harbor ~
+cat:Mine ~
+cat:Antenna ~
+cat:MicrowaveTower ~
+cat:Bridge ~
+
+# facilities
+cat:Facility -subcat-> cat:GeographicObject
+cat:NuclearFacility -subcat-> cat:Facility
+cat:EducationalFacility ~
+cat:MedicalFacility ~
+cat:MiningFacility ~
+cat:WasteFacility ~
+cat:EneregyFacility ~
+
+cat:PowerPlant -subcat-> cat:EneregyFacility
+
+cat:Reactor -subcat-> cat:NuclearFacility
+cat:Hospital -subcat-> cat:MedicalFacility
+
+cat:College -subcat-> cat:EducationalFacility
+cat:University ~
+
+
+# Buildings
+cat:Building -subcat-> cat:GeographicObject
+cat:Facility -occupies-> cat:Building
+cat:BuildingUse -subcat-> cat:Role
+cat:Building -used_as-> cat:BuildingUse
+cat:BuildingHistory -subcat-> cat:Process
+cat:Building -has-> cat:BuildingHistory
+
+# link into the building ontology

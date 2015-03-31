@@ -1,0 +1,6 @@
+#
+# Placeholder ontology for US regions
+#
+
+cat:us_region -subcat-> cat:GeographicRegion
+

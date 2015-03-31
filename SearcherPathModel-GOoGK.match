@@ -1,0 +1,6 @@
+#
+# matches between SearcherPathModel and GOoGK
+#
+
+cat:FootPath === cat:FootPath
+cat:DrivingLane === cat:DrivingLane

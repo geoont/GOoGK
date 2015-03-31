@@ -1,0 +1,3 @@
+Entity,Schema,Table,Columns,Where,SpecialSQL
+CenterLine,tiger_odsg,streets,"gid, fullname AS name, mtfcc, the_geom","mtfcc = 'S1100' OR mtfcc = 'S1200' OR mtfcc = 'S1400' OR mtfcc = 'S1730'",
+

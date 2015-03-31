@@ -1,0 +1,14 @@
+#
+# Ontology for inputs and outputs of the Street Model
+#
+
+[Street Model]
+
+cat:StreetModel -has-> cat:input 
+cat:StreetModel -has-> cat:output 
+
+cat:CenterLine -element_of-> cat:input
+
+cat:FootPath -element_of-> cat:output
+cat:DrivingLane -element_of-> cat:output
+

@@ -1,0 +1,8 @@
+Entity,Table,Columns,SpecialFunction
+SearcherPath,pathpoints,"gid, path_id, seq_num, name, notes, point_time,the_geom","SearcherModel"
+FootPath,sidewalk,"gid, mtfcc, the_geom",
+DrivingLane,pavement,"gid, mtfcc, the_geom",
+Building,building,"gid, height, the_geom",
+Lake,lake,"gid, name, the_geom",
+River,river,"gid, name, the_geom",
+Street,streets,"gid, name, mtfcc, the_geom",

@@ -1,0 +1,19 @@
+#
+# a fix for TIGER2009 ontology to support centerlines
+# eventually this fix should be made automatically, to do so
+#  * matching mechanics should be extended to handle matches when a class matches what 
+#    has to be a suprclass of several classes in other ontology (matching GOgGK 
+#    centerlines to tiger):
+#  cat:CenterLine <=subcat= cat:PrimaryRoad
+#  cat:CenterLine <=subcat= cat:SecondaryRoad
+#  cat:CenterLine <=subcat= cat:LocalNeighborhoodRoadRuralRoadCityStreet
+#
+# and this should generate an approprieate querry automatically
+#
+
+[TIGER fix]
+cat:CenterLine <-subcat- cat:PrimaryRoad
+cat:CenterLine <-subcat- cat:SecondaryRoad
+cat:CenterLine <-subcat- cat:LocalNeighborhoodRoadRuralRoadCityStreet
+
+

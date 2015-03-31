@@ -1,0 +1,3 @@
+Entity,Schema,Table,Columns,Where,SpecialSQL
+us_region,,,"gid, name, the_geom",,"SELECT gid, thinkquest_regions AS name, the_geom FROM us_regions.regions a, hsip2010.""Boundaries_US_States"" b WHERE a.state = b.state"
+

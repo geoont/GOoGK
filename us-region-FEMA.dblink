@@ -1,0 +1,2 @@
+Entity,Schema,Table,Columns,Where,SpecialSQL
+us_region,hsip2010,EmergencyServ_FEMA_REGIONS,"gid, region AS name, the_geom",,

@@ -1,0 +1,11 @@
+#
+# matches between SearcherPathModel and SNM DO
+# (all manual)
+#
+
+cat:Building === cat:building 
+cat:Lake === cat:lake
+cat:River === cat:river
+cat:Street === cat:street
+
+

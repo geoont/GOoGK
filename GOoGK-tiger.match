@@ -1,0 +1,54 @@
+#
+# SOFT match file
+# matches between: ontologies/GOoGK.soft => ontologies/tiger.soft
+#
+#cat:Building === cat:ApartmentBuildingorComplex	# words_soundex=0.333333333333333
+#cat:Building === cat:IndustrialBuildingorIndustrialPark	# words_soundex=0.25
+#cat:Building === cat:OfficeBuildingorOfficePark	# words_soundex=0.25
+#cat:Canal === cat:CanalDitchorAqueduct	# words_exact=0.333333333333333, words_soundex=0.333333333333333
+
+#cat:College === cat:SororityFraternityorCollegeDormitory	# words_exact=0.25, words_soundex=0.25
+cat:College === cat:UniversityorCollege	# words_exact=0.5, words_soundex=0.5
+
+#cat:Commercial === cat:CommercialRegion	# words_exact=1, words_soundex=1, soundex=1
+cat:Commercial === cat:CommercialWorkplace	# words_exact=0.5, words_soundex=0.5, soundex=1
+
+# commented out because of clash with HSIP
+#cat:Dam === cat:Dam	# words_exact=1, words_soundex=1, exact=1, soundex=1
+
+#cat:FootPath === cat:BridlePath	# words_exact=0.25, words_soundex=0.25
+#cat:FootPath === cat:RoadPathFeatures	# words_exact=0.166666666666667, words_soundex=0.166666666666667
+
+#cat:GreenArea === cat:CountySubdivisionParkForestorRecreationArea	# words_exact=0.0833333333333333, words_soundex=0.0833333333333333
+#cat:GreenArea === cat:IncorporatedPlaceParkForestorRecreationArea	# words_exact=0.0833333333333333, words_soundex=0.0833333333333333
+
+#cat:Hospital === cat:HospitalHospiceUrgentCareFacility	# words_exact=0.25, words_soundex=0.25, soundex=1
+
+# commented out because of clash with HSIP
+#cat:Lake === cat:LakePond	# words_exact=0.5, words_soundex=0.5
+
+#cat:MicrowaveTower === cat:LookoutTower	# words_exact=0.25, words_soundex=0.25
+
+#cat:MicrowaveTower === cat:TowerBeacon	# words_exact=0.25, words_soundex=0.25
+
+#cat:Mine === cat:QuarrynotwaterfilledOpenPitMineorMine	# words_exact=0.2, words_soundex=0.2
+cat:Mountain === cat:MountainPeakorSummit	# words_exact=0.333333333333333, words_soundex=0.333333333333333, soundex=1
+
+# commented out because of clash with HSIP
+#cat:Ocean === cat:OceanSea	# words_exact=0.5, words_soundex=0.5
+
+#cat:PedestrianTraffic === cat:WalkwayPedestrianTrail	# words_exact=0.166666666666667, words_soundex=0.166666666666667
+
+# commented out because of clash with HSIP
+cat:River === cat:StreamRiver	# words_exact=0.5, words_soundex=0.5
+
+#cat:Street === cat:LocalNeighborhoodRoadRuralRoadCityStreet	# words_exact=0.142857142857143, words_soundex=0.142857142857143
+
+#cat:Traffic === cat:TrafficAnalysisZone	# words_exact=0.333333333333333, words_soundex=0.333333333333333, soundex=1
+#cat:Traffic === cat:TrafficCircle	# words_exact=0.5, words_soundex=0.5, soundex=1
+
+#cat:University === cat:UniversityorCollege	# words_soundex=0.5, soundex=1
+
+#####
+cat:CenterLine === cat:CenterLine # this is an artifical match for tiger-fix.soft
+

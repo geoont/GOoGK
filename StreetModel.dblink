@@ -1,0 +1,4 @@
+Entity,Table,Columns,SpecialFunction
+CenterLine,streets,"gid, name, mtfcc, the_geom",
+FootPath,sidewalk,"gid, mtfcc, the_geom",StreetModel
+DrivingLane,pavement,"gid, mtfcc, the_geom",StreetModel

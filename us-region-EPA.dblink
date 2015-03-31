@@ -1,0 +1,2 @@
+Entity,Schema,Table,Columns,Where,SpecialSQL
+us_region,hsip2010,Boundaries_EPA_Regions,"gid, epa_region AS name, the_geom",,

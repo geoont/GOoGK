@@ -1,0 +1,18 @@
+#
+# Ontology for inputs and outputs of the Searcher Path Model
+#
+
+[Searcher Path Model]
+
+cat:SearcherPathModel -has-> cat:input 
+cat:SearcherPathModel -has-> cat:output 
+
+cat:FootPath -element_of-> cat:input
+cat:DrivingLane -element_of-> cat:input
+cat:Building -element_of-> cat:input
+cat:Lake -element_of-> cat:input
+cat:River -element_of-> cat:input
+cat:Street -element_of-> cat:input
+
+cat:SearcherPath -element_of-> cat:output
+
